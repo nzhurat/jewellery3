@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="js/script.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+<body>
+  <div id="popup" class="popup">
+    <h4>Subscribe to our newsletter</h4>
+    <button onclick="subscribe()">Subscribe</button>
+    <button onclick="closePopup()">No, thanks</button>
+  </div>
+
+  <div class="hero">
+    <div class="navbar">
+      <button type="button">Sign Up</button>
+      <div class="shopping">
+        <img src="img/cart.png">
+      </div>
+    </div>
+    <div class="content">
+      <h1>Elira</h1>
+      <h2>We add elegance to your freedom</h2>
+    </div>
+  </div>
+
+  <div id="buttons">
+    <button class="button-value" onclick="filterProduct('All')">All</button>
+    <button class="button-value" onclick="filterProduct('Gold')">Gold</button>
+    <button class="button-value" onclick="filterProduct('Silver')">Silver</button>
+  </div>
+
+  <div id="products"></div>
+
+  <div class="ad-window">
+    <h4>Find Your Style</h4>
+    <button class="consultation-btn">Get a consultation</button>
+    <div class="close-btn">X</div>
+  </div>
+
+  <div class="cart">
+    <h1>Cart</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+        <div class="total">0₴</div>
+        <div class="closeShopping">Close</div>
+    </div>
+</div>
+
+  <script src="js/script1.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/script2.js" type="text/javascript" charset="utf-8"></script>
+
+  <footer>
+    <h3>©2023</h3>
+  </footer>
+</body>
+</html>
+
+   

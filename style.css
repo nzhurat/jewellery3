@@ -1,0 +1,417 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.hero
+{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/bg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar button {
+  margin-right: 10px;
+}
+
+.shopping {
+  display: flex;
+  align-items: center;
+}
+
+.shopping img {
+  height: 40px; 
+  margin-left: 10px; 
+}
+
+.navbar
+{
+  width: 85%;
+  height: 15%;
+  margin: 1px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+button
+{
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.content
+{
+  color: #fbfcfd;
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+h1
+{
+  font-size: 80px;
+  margin: 10px 0 30px;
+  line-height: 30px;
+}
+h2
+{
+  font-family: 'Alex Brush', cursive;
+  font-size: 35px;
+}
+h3
+{
+  font-family: 'Castoro Titling', cursive;
+  font-size: 18px;
+  padding-top: 70px;
+}
+h4
+{
+  font-family: 'Castoro Titling', cursive;
+  font-size: 18px;
+  padding-top: 4px;
+}
+footer
+{
+  width: 100%;
+  height: 100px;
+  background-image: url(img/bgg.jpg); 
+  margin-top: 10px;
+  text-align: center;
+}
+.button-value 
+{
+  border: 1px solid #9FA1A9;
+  padding: 15px 37.5px;
+  border-radius: 40px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #9FA1A9;
+  cursor: pointer;
+  margin-top: 1.5em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  text-align: center;
+}
+.active .button 
+{
+  background-color: #9FA1A9;
+  color: #ffffff;
+}
+#products 
+{
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;;
+}
+.card 
+{
+  display: inline-block;
+  width: 250px;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  vertical-align: top;
+  background-color: #FFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.card button{
+  background-color: #9FA1A9;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+.cart{
+  position: fixed;
+  top:0;
+  left: 100%;
+  width: 500px;
+  background-color: rgba(122, 118, 117, 0.8);
+  height: 100vh;
+  transition: 0.5s;
+}
+.active .cart{
+  left: calc(100% - 500px);
+}
+.active .container {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  background-color: inherit;
+}
+
+
+.cart h1{
+  color: white;
+  font-weight: 50;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.cart .checkOut{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.cart .checkOut div{
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.cart .checkOut div:nth-child(2){
+  background-color: #d2ccc7;
+  color: black;
+}
+
+.listCard li{
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  grid-row-gap: 5px; /* Adjust the value to change the distance between rows */
+}
+.listCard li div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listCard li img{
+  width: 90%;
+}
+.listCard li button{
+  background-color: #fff5;
+  border: none;
+}
+.listCard .count{
+  margin: 0 10px;
+}
+img 
+{
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+.image-container 
+{
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+.image-container img 
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.container 
+{
+  padding: 10px;
+}
+.container h5 
+{
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+.product-name 
+{
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.price 
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.1em;
+}
+.description 
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 0.9em;
+}
+.card:hover .description 
+{
+  opacity: 1;
+}
+.card .description 
+{
+  display: none;
+}
+.card:hover .description 
+{
+  display: block;
+}
+.hide 
+{
+  display: none;
+}
+.popup 
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 160px;
+  padding: 6px;
+  background-color: #d2ccc7;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+.popup button 
+{
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.popup button:hover 
+{
+  background-color: #f7f1e9;
+}
+.ad-window 
+{
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  transform: translateX(1%);
+  text-align: center;
+  width: 300px;
+  display: none;
+}
+.ad-window h2 
+{
+  font-size: 24px;
+  margin-top: 0;
+}
+.ad-window p 
+{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.consultation-btn 
+{
+  background-color: #f7f1e9;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.consultation-btn:hover 
+{
+  background-color: #f7f1e9;
+  cursor: pointer;
+}
+.close-btn 
+{
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  transition: background-color 0.3s ease;
+  width: 20px;
+  display: none;
+}
+.close-btn:hover 
+{
+  background-color: #d2ccc7;
+}
+  @media only screen and (max-width: 400px) 
+  {
+    .hero
+    {
+      background-image: url(img/bg2.png);
+    }
+    .popup 
+    {
+      width: 200px;
+      height: 160px;
+    }
+    .advertisement 
+    {
+      width: 150px;
+    }
+    .card 
+    {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .card-content 
+    {
+      font-size: 18px;
+    }
+    .card-container 
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .popup button 
+    {
+      padding: 5px;
+      margin: 10px;
+    }
+  .button-value 
+  {
+    padding: 7.5px 18.75px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+  }
+}  
